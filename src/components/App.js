@@ -8,11 +8,13 @@ import user from "../data/user";
 console.log(user);
 
 function App() {
+  const { color, name, city, bio, links } = user
+  
   return (
     <div>
       <NavBar />
-      <Home />
-      <About />
+      <Home color={color} name={name} city={city} />
+      <About bio={bio} links={links}/>
     </div>
   );
 }
